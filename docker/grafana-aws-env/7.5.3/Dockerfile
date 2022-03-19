@@ -1,4 +1,4 @@
-FROM grafana/grafana:7.5.3
+FROM grafana/grafana:7.5.12
 USER root
 RUN  apk -U upgrade && apk add curl && \ 
       curl -L https://github.com/telia-oss/aws-env/releases/download/v1.0.2/aws-env-linux-amd64 > /usr/local/bin/aws-env && \
